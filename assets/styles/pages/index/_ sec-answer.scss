@@ -1,13 +1,14 @@
 .sec-answer {
-  display: none;
-  // visibility: hidden;
-  // opacity: 0;
-  // transition: opacity 0.6s $ease-out-sine, visibility 0.6s $ease-out-sine;
+  // display: none;
+  height: 0;
+  visibility: hidden;
   background-color: #f5f5f5;
+  opacity: 0;
+  transition: opacity 0.6s $ease-out-sine, visibility 0.6s $ease-out-sine;
 
   .answer {
     position: relative;
-    // display: none;
+    display: none;
 
     &__head {
       display: flex;
@@ -54,8 +55,8 @@
           position: relative;
           z-index: 2;
           margin: 0 55px 30px;
-          border: 0.8vw solid #000;
-          border-radius: 3.2vw;
+          border: 5px solid #000;
+          border-radius: 10px;
           box-shadow: rgb(105 105 105) 0 20px 30px -10px;
 
           img {
@@ -71,6 +72,7 @@
     }
 
     &__body {
+      display: none;
       padding: 80px 0;
       font-size: 5.1vw;
       line-height: 1.7;
@@ -138,17 +140,22 @@
           }
         }
       }
+
+      &.is-active {
+        display: block;
+      }
     }
 
-    // &.is-active {
-    //   display: block;
-    // }
+    &.is-active {
+      display: block;
+    }
   }
 
   &.is-active {
     display: block;
-    // visibility: visible;
-    // opacity: 1;
-    // transition: opacity 0.6s $ease-out-sine, visibility 0.6s $ease-out-sine;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.6s $ease-out-sine, visibility 0.6s $ease-out-sine;
   }
 }

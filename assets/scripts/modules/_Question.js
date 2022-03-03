@@ -10,6 +10,7 @@ export default class Question {
     // questionとanswerの画面切り替えのため、値取得
     this.containerQuestion = document.querySelector('[data-question-container]')
     this.containerAnswer = document.querySelector('[data-answer-container]')
+    this.bodyAnswer = document.querySelector('[data-answer-body]')
     // this.appeal = document.querySelector('[data-appeal]')
     this.btn = document.getElementsByClassName('btn')
     this.count = 0
@@ -54,7 +55,12 @@ export default class Question {
       // console.log(i)
       console.log(this.count)
       if (this.count === 1) {
-        this.pagenation02.classList.add(config.activeClass)
+        // this.pagenation02.classList.add(config.activeClass)
+        // console.log(this.pagenation02)
+        setTimeout(function(e) {
+          const pagenation02 = document.querySelector('[data-pagenation02]')
+          pagenation02.classList.add(config.activeClass)
+        }, 100)
         break
       } else if (this.count === 2) {
         this.pagenation03.classList.add(config.activeClass)
@@ -68,16 +74,24 @@ export default class Question {
       } else if (this.count === 5) {
         this.containerQuestion.classList.remove(config.activeClass)
         this.containerAnswer.classList.add(config.activeClass)
+        setTimeout(function() {
+          const bodyAnswer = document.querySelector(`[data-answer-body]`)
+          bodyAnswer.classList.add(config.activeClass)
+        }, 100)
+        // this.bodyAnswer.classList.add(config.activeClass)
         // this.appeal.classList.add(config.activeClass)
         // error.forEach(function(elem) {
         //   elem.classList.add('active')
-        //   elem.innerHTML = 'あと1問！！！'
+        //   elem.innerHTML = 'あと1問'
         // })
       }
     }
     const index = e.currentTarget.getAttribute('data-question-trigger')
-    const target = document.querySelector(`[data-question-target="${index}"]`)
-    target.classList.add(config.activeClass)
+    setTimeout(function() {
+      const target = document.querySelector(`[data-question-target="${index}"]`)
+      target.classList.add(config.activeClass)
+    }, 100)
+    // document.getElementsByClassName('loading-anime')[0].classList.add('end')
   }
 
   //   onClose() {

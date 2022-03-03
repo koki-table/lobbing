@@ -9,6 +9,9 @@
   opacity: 0;
 
   &__head {
+    position: fixed;
+    top: 65px;
+
     .icon {
       position: relative;
       display: flex;
@@ -61,10 +64,14 @@
   }
 
   &__body {
-    margin: 0 0 26vh;
+    // margin: 0 0 26vh;
 
     .question {
       display: none;
+      // visibility: hidden;
+      // opacity: 0;
+      // height: 0;
+      // transition: opacity 0.6s $ease-out-sine, visibility 0.6s $ease-out-sine;
       width: 89.3333333333vw;
       padding: 4.5333333333vw 5.3333333333vw 5.5666666667vw;
       margin: 0 auto 20px;
