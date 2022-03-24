@@ -25,6 +25,10 @@
         background-color: #fff;
         border-radius: 5px;
 
+        @include media-breakpoint-up(md) {
+          margin: 0 3.3vw 0;
+        }
+
         &::before {
           position: absolute;
           top: 0;
@@ -80,6 +84,10 @@
       border-radius: 3.2vw;
       -webkit-box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
       box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
+
+      @include media-breakpoint-up(md) {
+        width: 49.3333333333vw;
+      }
 
       &__query {
         span {

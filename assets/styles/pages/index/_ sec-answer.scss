@@ -16,6 +16,14 @@
       align-items: center;
       height: 100vh;
 
+      @include media-breakpoint-up(md) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: inherit;
+        height: 100vh;
+        flex-flow: column;
+      }
+
       .mv {
         &__bg {
           position: fixed;
@@ -59,6 +67,10 @@
           border-radius: 10px;
           box-shadow: rgb(105 105 105) 0 20px 30px -10px;
 
+          @include media-breakpoint-up(md) {
+            margin: 160px auto 30px;
+          }
+
           img {
             width: 100%;
             height: auto;
@@ -78,6 +90,11 @@
       line-height: 1.7;
       background-color: #348ecc;
 
+      @include media-breakpoint-up(md) {
+        padding: 160px 0;
+        font-size: 2.1vw;
+      }
+
       .content {
         width: 89.3333333333vw;
         padding: 4.5333333333vw 5.3333333333vw 5.5666666667vw;
@@ -87,6 +104,10 @@
         border-radius: 3.2vw;
         -webkit-box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
         box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
+
+        @include media-breakpoint-up(md) {
+          width: 49.3333333333vw;
+        }
       }
 
       .appeal {
@@ -97,6 +118,10 @@
         // &.is-active {
         //   display: block;
         // }
+        @include media-breakpoint-up(md) {
+          padding: 0 30.6666666667vw;
+          margin: 120px 0 0 0;
+        }
 
         &__link {
           border: 0.8vw solid #1da1f1;
@@ -122,6 +147,15 @@
             -webkit-box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
             box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
 
+            @include media-breakpoint-up(md) {
+              position: relative;
+              width: 100%;
+              padding: 1.533333vw 3.333333vw 2.066667vw 4.333333vw;
+              margin: 90px auto 0;
+              font-size: 24px;
+              box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
+            }
+
             &::after {
               position: absolute;
               top: 24px;
@@ -136,6 +170,10 @@
               -moz-transform: rotate(225deg);
               -ms-transform: rotate(225deg);
               -o-transform: rotate(225deg);
+
+              @include media-breakpoint-up(md) {
+                top: 35px;
+              }
             }
           }
         }
