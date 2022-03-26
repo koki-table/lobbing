@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Document</title>
-  <meta name="description" content="">
+  <title>Lobbing</title>
+  <meta name="description" content="Lobbing 卓球診断サイト">
 
   <meta property="og:title" content=""><!-- To support Twitter Cards you need to fill in the content. -->
   <meta property="og:type" content="website"><!-- You need to fill in the content with "website" for the top page, and "article" for the other pages. -->
@@ -29,7 +29,6 @@
   <%- include('/gtm-body') %>
 
   <div class="l-page">
-
     <%- include('/header') %>
 
     <main class="l-main">
@@ -154,11 +153,11 @@
             <li class="question is-active" data-question-close>
               <div class="question__query">
                 <span><img src="/assets/images/pages/index/question_icon_num_1.svg" alt=""></span>
-                <p>～？</p>
+                <p>ラバーが好きか嫌いか？</p>
               </div>
               <div class="question__select">
-                <input id="q1-y" class="btn" type="radio" value="0"><label class="label" for="q1-y" data-question-trigger="1-1">YEddddddS</label>
-                <input id="q1-n" class="btn" type="radio" value="1"><label class="label" for="q1-n" data-question-trigger="1-2">NddddddddO</label>
+                <input class="btn" type="radio" value="0"><label class="label" for="q1-y" data-question-trigger="1-1">はい</label>
+                <input class="btn" type="radio" value="1"><label class="label" for="q1-n" data-question-trigger="1-2">いいえ</label>
               </div>
             </li>
   
@@ -168,11 +167,22 @@
             <li class="question" data-question-target="1-1" data-question-close>
               <div class="question__query">
                 <span><img src="/assets/images/pages/index/question_icon_num_2.svg" alt=""></span>
-                <p>～？</p>
+                <p>得意な戦術は？</p>
               </div>
               <div class="question__select">
-                <input id="q2-y" class="btn" name="q2" type="radio" value="1"><label class="label" for="q2-y" data-question-trigger="1-1-1">YES</label>
-                <input id="q2-n" class="btn" name="q2" type="radio" value="0"><label class="label" for="q2-n" data-question-trigger="1-1-2">NO</label>
+                <input class="btn" name="q2" type="radio" value="1"><label class="label" for="q2-y" data-question-trigger="1-1-1">台上技術が得意だ</label>
+                <input class="btn" name="q2" type="radio" value="0"><label class="label" for="q2-n" data-question-trigger="1-1-2">大きなラリー戦が得意だ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_2.svg" alt=""></span>
+                <p>欲しい能力は？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q2" type="radio" value="1"><label class="label" for="q2-y" data-question-trigger="1-2-1">人の心が読める</label>
+                <input class="btn" name="q2" type="radio" value="0"><label class="label" for="q2-n" data-question-trigger="1-2-2">人より優れた体力</label>
               </div>
             </li>
             
@@ -180,11 +190,44 @@
             <li class="question" data-question-target="1-1-1" data-question-close>
               <div class="question__query">
                 <span><img src="/assets/images/pages/index/question_icon_num_3.svg" alt=""></span>
-                <p>～？</p>
+                <p>出るか出ないかのボール捌きを武器にしたい？</p>
               </div>
               <div class="question__select">
-                <input id="q3-y" class="btn" name="q3" type="radio" value="1"><label class="label" for="q3-y" data-question-trigger="1-1-1-1">YES</label>
-                <input id="q3-n" class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-n" data-question-trigger="1-1-2">NO</label>
+                <input class="btn" name="q3" type="radio" value="1"><label class="label" for="q3-y" data-question-trigger="1-1-1-1">はい</label>
+                <input class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-n" data-question-trigger="1-1-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-２" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_3.svg" alt=""></span>
+                <p>パワーがあるほうだ</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q3" type="radio" value="1"><label class="label" for="q3-y" data-question-trigger="1-1-2-1">はい</label>
+                <input class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-n" data-question-trigger="1-1-2-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_3.svg" alt=""></span>
+                <p>カル？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q3" type="radio" value="1"><label class="label" for="q3-y" data-question-trigger="1-2-1-1">デラノ</label>
+                <input class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-n" data-question-trigger="1-2-1-2">ロス・ゴーン</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_3.svg" alt=""></span>
+                <p>好きな卓球ユーチューバーは？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q3" type="radio" value="1"><label class="label" for="q3-y" data-question-trigger="1-2-2-1">さくまぶらざーず</label>
+                <input class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-n" data-question-trigger="1-2-2">それ以外</label>
               </div>
             </li>
 
@@ -192,11 +235,94 @@
             <li class="question" data-question-target="1-1-1-1" data-question-close>
               <div class="question__query">
                 <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
-                <p>～？</p>
+                <p>ラバー一枚にかけれる予算は？</p>
               </div>
               <div class="question__select">
-                <input id="q4-y" class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-1-1-1-1">YES</label>
-                <input id="q4-n" class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-1-2">NO</label>
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-1-1-1-1">5000円以上</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-1-1-1-2">5000円以内</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-1-２" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
+                <p>細かい技術よりパワーで勝負したい？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-1-1-2-1">はい</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-1-1-2-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-2-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
+                <p>好き女性のタイプもパワーがあるほうだ</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-1-2-1-1">はい</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-1-2-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-2-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
+                <p>もしかして華奢な女性が好き？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-1-2-2-1">はい</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-1-2-2-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
+                <p>人は見た目じゃないハートだ</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-2-1-1-1">はい</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-2-1-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
+                <div class="sub">
+                  <img src="/assets/images/pages/index/karurosu.jpg" alt="" style="width: 100%; height: auto;">
+                </div>
+                <p>やっちゃえ？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-2-1-2-1">日産</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-2-1-2-2">バタフライ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-2-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
+                <div class="sub">
+                  <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wOVpLKr7jEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>さくまぶらざーず</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-2-1-1-1">見る</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-2-1-1-2">見ない</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-2-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_4.svg" alt=""></span>
+                <p>声の出し方は？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-y" data-question-trigger="1-2-2-2-1">チョレイ・フォレイ</label>
+                <input class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-n" data-question-trigger="1-2-2-2-2">ピャーレイ</label>
               </div>
             </li>
 
@@ -204,11 +330,187 @@
             <li class="question" data-question-target="1-1-1-1-1" data-question-close>
               <div class="question__query">
                 <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
-                <p>～？</p>
+                <p>中国ラバーが好き？</p>
               </div>
               <div class="question__select">
-                <input id="q5-y" class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-1-1-1-1">YES</label>
-                <input id="q5-n" class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-2">NO</label>
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-1-1-1-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-1-1-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-1-1-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>中国ラバーが好き？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-1-1-2-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-1-1-2-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-1-2-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>打球が弧線を描きやすいラバーが良い？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-1-2-1-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-1-2-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-1-2-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>どっちが理想？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-1-2-2-1">ノーミスで下回転打ち10本入る</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-1-2-2-2">ノーミスでカウンター10本入る</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-2-1-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>面を開いて打つほうだ</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-2-1-1-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-2-1-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-2-1-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>早いピッチでの卓球が持ち味である</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-2-1-2-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-2-1-2-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-2-2-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>台上が短く止まるラバーが良い</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-2-2-1-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-2-2-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-1-2-2-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>ラケットの角にボールが当たることが多い</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-1-2-2-2-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-1-2-2-2-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1-1-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>アジアの卓球よりヨーロッパの卓球が好きだ</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-1-1-1-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-1-1-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1-1-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>アジアの卓球よりヨーロッパの卓球が好きだ</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-1-1-1-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-1-1-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1-1-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>やわらかいラバーが好きである</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-1-1-2-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-1-1-2-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1-2-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>人と違ったラバーを使いたい</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-1-2-1-1">はい</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-1-2-1-2">いいえ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-1-2-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>● ● ● タス</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-1-2-1-1">ヴィクタス</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-1-2-1-2">フレイタス</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-2-1-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>YGサーブを極めたい</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-2-1-1-1">ヴィクタス</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-2-1-1-2">フレイタス</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-2-1-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>台上はフリックで攻めるツッツキで攻める</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-2-1-1-1">フリック</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-2-1-1-2">ツッツキ</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-2-2-1" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>練習は？</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-2-2-1-1">苦手なものを克服する派</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-2-2-1-2">得意なものを成長させる派</label>
+              </div>
+            </li>
+
+            <li class="question" data-question-target="1-2-2-2-2" data-question-close>
+              <div class="question__query">
+                <span><img src="/assets/images/pages/index/question_icon_num_5.svg" alt=""></span>
+                <p>ボールは?</p>
+              </div>
+              <div class="question__select">
+                <input class="btn" name="q5" type="radio" value="1"><label class="label" for="q5-y" data-question-trigger="1-2-2-2-2-1">相手が練習していないボールを選ぶ</label>
+                <input class="btn" name="q5" type="radio" value="0"><label class="label" for="q5-n" data-question-trigger="1-2-2-2-2-2">自分が練習しているボールを選ぶ</label>
               </div>
             </li>
 
@@ -233,7 +535,7 @@
           <div class="answer__head">
             <div class="mv">
               <div class="mv__bg scroll-target" id="roop"></div></div>
-              <div class="mv__img rellax" data-rellax-percentage="0.8"><img src="/assets/images/pages/index/1-1-1-1.jpg" alt=""></div>
+              <div class="mv__img" data-rellax-percentage="0.8" delay="0" ><img src="/assets/images/pages/index/1-1-1-1.jpg" alt=""></div>
               <h2 class="mv__title">テナジー05</h2>
             </div>
           </div>
@@ -284,14 +586,13 @@
             </div>
           </div>
           
-        </div>
+        
         
 
       </section>
     </main><!-- .l-main -->
 
     <%- include('/footer') %>
-
   </div><!-- .l-page -->
 
   <script src="/assets/scripts/vendors.js" defer></script>
