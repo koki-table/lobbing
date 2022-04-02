@@ -11,6 +11,8 @@
   &__head {
     position: fixed;
     top: 65px;
+    right: 0;
+    left: 0;
 
     .icon {
       position: relative;
@@ -64,6 +66,10 @@
         content: '';
         background-color: #fff;
         opacity: 0.7;
+
+        @include media-breakpoint-up(md) {
+          width: 55%;
+        }
       }
     }
   }
@@ -75,7 +81,7 @@
       display: none;
       width: 89.3333333333vw;
       padding: 4.5333333333vw 5.3333333333vw 5.5666666667vw;
-      margin: 0 auto 20px;
+      margin: 35px auto 0;
       background-color: #fff;
       border: 0.8vw solid #000;
       border-radius: 3.2vw;
@@ -84,6 +90,7 @@
 
       @include media-breakpoint-up(md) {
         width: 49.3333333333vw;
+        // max-width: 470px;
       }
 
       &__query {
@@ -98,11 +105,16 @@
         }
 
         .sub {
+          max-width: 289px;
           margin: 20px 0 -20px;
 
+          @include media-breakpoint-up(md) {
+            max-width: auto;
+          }
+
           img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 154px;
           }
         }
 
@@ -111,6 +123,10 @@
           font-size: 15px;
           line-height: 1.7;
           text-align: left;
+
+          @include media-breakpoint-up(md) {
+            font-size: 20px;
+          }
         }
       }
 
