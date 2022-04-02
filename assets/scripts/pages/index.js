@@ -1,6 +1,6 @@
 import anime from 'animejs/lib/anime.es.js'
 import Question from '../modules/_Question'
-import Rellax from 'rellax'
+// import Rellax from 'rellax'
 
 // eslint-disable-next-line no-unused-vars
 const logo = document.getElementById('logo')
@@ -51,14 +51,14 @@ question.init()
 // answerのパララックスアニメーション
 // parallax
 // eslint-disable-next-line no-unused-vars
-var rellax = new Rellax('.rellax', {
-  speed: -2,
-  center: false,
-  wrapper: null,
-  round: true,
-  vertical: true,
-  horizontal: false
-})
+// var rellax = new Rellax('.rellax', {
+//   speed: -2,
+//   center: false,
+//   wrapper: null,
+//   round: true,
+//   vertical: true,
+//   horizontal: false
+// })
 
 // スクロール後クラス追加
 const myFunc = function() {
