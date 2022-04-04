@@ -1,7 +1,9 @@
 import anime from 'animejs/lib/anime.es.js'
+import AnotherLink from '../modules/_AnotherLink'
 import Question from '../modules/_Question'
 // import Rellax from 'rellax'
 
+// ローディングアニメーション/////////////////////////////////////////////////
 // eslint-disable-next-line no-unused-vars
 const logo = document.getElementById('logo')
 // const startAnimation = document.getElementById('startAnimation')
@@ -85,3 +87,7 @@ const myFunc = function() {
 }
 
 window.addEventListener('scroll', myFunc, false)
+
+// 別リンク遷移の際のアニメーション////////////////////////////////////////////
+const anotherLink = new AnotherLink()
+anotherLink.init()
