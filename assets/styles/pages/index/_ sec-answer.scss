@@ -33,7 +33,7 @@
 
         &__bg {
           position: fixed;
-          top: 16%;
+          top: 12%;
           z-index: 1;
           width: 100%;
           height: 26.6vw;
@@ -66,7 +66,7 @@
         &__img {
           position: relative;
           z-index: 2;
-          margin: 0 55px 0;
+          margin: -30px 55px 0;
           border: 5px solid #000;
           border-radius: 10px;
           box-shadow: rgb(105 105 105) 0 20px 30px -10px;
@@ -83,11 +83,54 @@
         }
 
         &__title {
-          margin: -50px auto 60px;
+          margin: -50px auto 80px;
           font-family: 'Source Sans Pro', sans-serif;
           font-size: 21px;
           font-weight: 700;
           letter-spacing: 0.15em;
+        }
+
+        &__scroll {
+          position: absolute;
+          bottom: 0;
+          left: 28px;
+          z-index: 1;
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+          -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+
+          .scroll {
+            display: flex;
+            align-items: center;
+
+            &__line {
+              position: relative;
+              width: 110px;
+              height: 1px;
+              overflow: hidden;
+              background: #ccc;
+
+              .line {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                -webkit-animation: 2.5s linear infinite scroll-loop;
+                animation: 2.5s linear infinite scroll-loop;
+              }
+            }
+
+            &__text {
+              margin: 0 0 0 10px;
+              font-family: serif;
+              font-size: 13px;
+              font-weight: 600;
+              letter-spacing: 0.1em;
+            }
+          }
         }
       }
     }
@@ -176,7 +219,7 @@
             &::after {
               position: absolute;
               top: 20px;
-              left: 60px;
+              left: 16vw;
               width: 13px;
               height: 13px;
               content: '';
@@ -225,5 +268,29 @@
     visibility: visible;
     opacity: 1;
     transition: opacity 0.6s $ease-out-sine, visibility 0.6s $ease-out-sine;
+  }
+}
+
+@-webkit-keyframes scroll-loop {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes scroll-loop {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
