@@ -58,7 +58,7 @@ export default class AnotherLink {
       complete: () => {
         // window.alert('Complete!')
         window.location.href =
-          'https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw'
+          'https://twitter.com/Lobbing_?ref_src=twsrc%5Etfw'
       }
     })
 
