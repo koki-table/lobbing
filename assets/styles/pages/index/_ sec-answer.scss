@@ -36,7 +36,7 @@
           top: 12%;
           z-index: 1;
           width: 100%;
-          height: 26.6vw;
+          height: 26.5vw;
           background: url('/assets/images/pages/index/1-1-1-1.jpg') repeat-x;
           background-size: 25%;
           box-shadow: rgb(105 105 105) 0 10px 15px -5px;
@@ -50,6 +50,8 @@
 
           @include media-breakpoint-up(md) {
             top: 9%;
+            height: 14.8vw;
+            background-size: 14%;
           }
 
           &.is-active {
@@ -66,7 +68,7 @@
         &__img {
           position: relative;
           z-index: 2;
-          margin: -30px 55px 0;
+          margin: -30px 17vw 0;
           border: 5px solid #000;
           border-radius: 10px;
           box-shadow: rgb(105 105 105) 0 20px 30px -10px;
@@ -99,6 +101,10 @@
           transform: rotate(-90deg);
           -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
+
+          @include media-breakpoint-up(md) {
+            left: 6%;
+          }
 
           .scroll {
             display: flex;
@@ -144,7 +150,7 @@
 
       @include media-breakpoint-up(md) {
         padding: 160px 0;
-        font-size: 2.1vw;
+        font-size: 1.5vw;
       }
 
       .content {
@@ -211,7 +217,7 @@
               position: relative;
               width: 100%;
               padding: 1.533333vw 3.333333vw 2.066667vw 4.333333vw;
-              margin: 90px auto 0;
+              margin: 5vh auto 0;
               font-size: 24px;
               box-shadow: 1.2vw 1.2vw 0 0 #025bb4;
             }
@@ -230,6 +236,7 @@
 
               @include media-breakpoint-up(md) {
                 top: 35px;
+                display: none;
               }
             }
           }
@@ -246,8 +253,9 @@
           // text-indent: -1em;
 
           @include media-breakpoint-up(md) {
-            margin: 90px auto 0;
-            font-size: 20px;
+            margin: 25px auto 0;
+            font-size: 16px;
+            white-space: nowrap;
           }
         }
       }
