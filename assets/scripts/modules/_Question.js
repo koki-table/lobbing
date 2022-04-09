@@ -11,6 +11,7 @@ export default class Question {
     this.containerQuestion = document.querySelector('[data-question-container]')
     this.containerAnswer = document.querySelector('[data-answer-container]')
     this.bodyAnswer = document.querySelector('[data-answer-body]')
+    this.bodyAnswerText = document.querySelector('[data-answer-text-target]')
     // this.appeal = document.querySelector('[data-appeal]')
     this.btn = document.getElementsByClassName('btn')
     this.count = 0
@@ -74,6 +75,11 @@ export default class Question {
       } else if (this.count === 5) {
         this.containerQuestion.classList.remove(config.activeClass)
         this.containerAnswer.classList.add(config.activeClass)
+        const index = e.currentTarget.getAttribute('data-question-trigger')
+        const target = document.querySelector(
+          `[data-answer-text-target="${index}"]`
+        )
+        target.classList.add(config.activeClass)
         setTimeout(function() {
           const bodyAnswer = document.querySelector(`[data-answer-body]`)
           bodyAnswer.classList.add(config.activeClass)
