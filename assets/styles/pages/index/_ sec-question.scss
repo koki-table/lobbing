@@ -101,6 +101,17 @@
           }
         }
 
+        p {
+          margin: 30px 15px;
+          font-size: 15px;
+          line-height: 1.7;
+          text-align: left;
+
+          @include media-breakpoint-up(md) {
+            font-size: 20px;
+          }
+        }
+
         .sub {
           max-width: 289px;
           margin: 20px 0 -20px;
@@ -113,16 +124,11 @@
             width: auto;
             height: 154px;
           }
-        }
 
-        p {
-          margin: 30px 15px;
-          font-size: 15px;
-          line-height: 1.7;
-          text-align: left;
-
-          @include media-breakpoint-up(md) {
-            font-size: 20px;
+          p {
+            display: inline-block;
+            margin: 5px 0 10px;
+            font-size: 11px;
           }
         }
       }
