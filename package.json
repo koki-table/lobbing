@@ -28,6 +28,7 @@
     "firebase-tools": "^10.5.0",
     "focus-trap": "^4.0.2",
     "gsap": "^3.9.1",
+    "gulp-webp": "^4.0.1",
     "intersection-observer": "^0.5.1",
     "lodash": "^4.17.11",
     "no-scroll": "^2.1.1",
