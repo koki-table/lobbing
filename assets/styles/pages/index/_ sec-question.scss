@@ -75,8 +75,6 @@
   }
 
   &__body {
-    // margin: 0 0 26vh;
-
     .question {
       display: none;
       width: 89.3333333333vw;
@@ -90,7 +88,6 @@
 
       @include media-breakpoint-up(md) {
         width: 49.3333333333vw;
-        // max-width: 470px;
       }
 
       &__query {
@@ -226,7 +223,6 @@
     margin-top: 40px;
     font-size: 14px;
     color: #bf3030;
-    // font-weight: bold;
     text-align: center;
     background-color: #fff;
     border: 0.8vw solid #000;
